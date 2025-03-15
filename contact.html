@@ -41,10 +41,13 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <h3 class="text-center mb-4">Contact Us</h3>
-                        <form action="https://api.web3forms.com/submit" method="POST">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
                             <!-- Hidden field for the access key -->
                             <input type="hidden" name="access_key" value="2635e977-1bbf-4feb-a23d-776f810a998d">
-                        
+                            
+                            <!-- Hidden redirect -->
+                            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thanks.html">
+                            
                             <!-- Name Field -->
                             <div class="mb-3">
                                 <label for="name" class="form-label">Your Name</label>
@@ -67,14 +70,12 @@
                             <div class="d-grid gap-2">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
-                        </form>
-                        
+                        </form>                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoA7rCEnKDVR0cEjj1MGqzOq3MFwwjw3o3h2peBiQ6Kgxg9" crossorigin="anonymous"></script>
 </body>
